@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color tokens */
+  --bg-900: #071029; /* deep indigo */
+  --bg-800: #0b1a2b;
+  --muted: #9aa6b2;
+  --accent: #FF6B6B; /* warm coral */
+  --accent-2: #FFD166; /* warm gold */
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(180deg,var(--bg-900) 0%, var(--bg-800) 100%);
+}
+
+.site-shell {
+  position: relative;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+
+.site-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.24), transparent 30%),
+    radial-gradient(circle at 85% 0%, rgba(255, 107, 107, 0.18), transparent 26%),
+    linear-gradient(135deg, #060816 0%, #0b1120 45%, #111827 100%);
+}
+
+.site-shell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.22;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,0.7), transparent 95%);
+  animation: background-drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes background-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.16;
+  }
+  100% {
+    transform: translate3d(-18px, -16px, 0) scale(1.03);
+    opacity: 0.28;
+  }
+}
+
+/* Heading styles to use Playfair Display from Google Fonts */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Hero tokens */
+.hero {
+  padding: 3rem 0;
+}
+.hero-name {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 0.96;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+.hero-role {
+  color: var(--accent-2);
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+.hero-intro {
+  color: #cbd5e1;
+  max-width: 56ch;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 70%, black 30%));
+  color: white;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(255,107,107,0.12);
+}
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-ghost {
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #e6eef8;
+}
+
+/* Project card */
+.project-card {
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+  will-change: transform;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+  border-color: color-mix(in srgb, var(--accent) 35%, black 65%);
+}
+.project-tag {
+  background: linear-gradient(180deg, rgba(255,107,107,0.08), rgba(255,209,102,0.04));
+  color: var(--accent-2);
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+}
+
+/* Utility: accent color */
+.accent {
+  color: var(--accent);
+}
+
+/* subtle reveal animation for sections */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 420ms cubic-bezier(.16,.84,.24,1), transform 420ms cubic-bezier(.16,.84,.24,1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* image gentle zoom on hover */
+.img-hover-zoom:hover img {
+  transform: scale(1.04);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes boji-bob {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes boji-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(251, 191, 36, 0.15); }
+}
+
+/* utility to hide native scrollbars for the horizontal project scroller */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+
