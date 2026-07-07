@@ -14,7 +14,7 @@ export const PROJECTS = [
       'Iterate with pilot MSMEs and roll out incremental improvements'
     ],
     outcome: 'Streamlined data submission and monitoring workflows, improved data consistency, and reduced manual reporting overhead for program staff and participating MSMEs.',
-    image: '/img/project1.png',
+    image: '/public/project1.png',
     stack: ['React', 'Firebase', 'Node.js', 'Python', 'CSS', 'React Bootstrap']
   },
   {
@@ -32,7 +32,7 @@ export const PROJECTS = [
       'Refine the system based on user feedback from program staff'
     ],
     outcome: 'Made attendance tracking simpler, faster, and more reliable for both interns and program coordinators.',
-    image: '/img/project2.jpg',
+    image: '/public/project2.jpg',
     stack: ['React native', 'HTML', 'CSS', 'Node.js', 'Firebase', 'tailwindcss']
   },
   {
@@ -50,7 +50,7 @@ export const PROJECTS = [
       'Deliver a lightweight app for day-to-day field use'
     ],
     outcome: 'Enabled remote management of the signboard system, saving time and improving operational flexibility.',
-    image: '/img/project3.jpg',
+    image: '/public/project3.jpg',
     stack: ['Android Studio', 'C++', 'Java', 'XML']
   },
   {
@@ -68,7 +68,7 @@ export const PROJECTS = [
       'Refine features based on usability feedback'
     ],
     outcome: 'Improved transaction handling and inventory visibility while reducing manual bookkeeping effort.',
-    image: '/img/project4.jpg',
+    image: '/public/project4.jpg',
     stack: ['SceneBuilder', 'NETbeans', 'Laragon', 'MySQL', 'XML']
   },
   {
@@ -86,7 +86,7 @@ export const PROJECTS = [
       'Improve visual clarity for field monitoring and reporting'
     ],
     outcome: 'Made crop mapping and field monitoring more accessible, helping users manage agricultural data with greater visibility.',
-    image: '/img/project5.png',
+    image: '/public/project5.png',
     stack: ['HTML', 'CSS', 'JavaScript', 'GeoJson', 'Firebase', 'Leaflet.js']
   }
 ];

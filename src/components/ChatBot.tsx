@@ -142,7 +142,7 @@ export default function ChatBot() {
       >
         <span className="sr-only">Open BOJI</span>
         <div className="relative flex h-14 w-14 items-center justify-center rounded-full bg-white/95 overflow-hidden">
-          <img src="/img/boji.gif" alt="BOJI" className="h-full w-full object-cover" />
+          <img src="/public/boji.gif" alt="BOJI" className="h-full w-full object-cover" />
         </div>
       </button>
 
@@ -154,7 +154,7 @@ export default function ChatBot() {
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 overflow-hidden rounded-full bg-white/10">
-                  <img src="/img/boji2.png" alt="BOJI" className="h-full w-full object-cover" />
+                  <img src="/public/boji2.png" alt="BOJI" className="h-full w-full object-cover" />
                 </div>
                 <div>
                   <div className="font-semibold">BOJI — Resume assistant</div>

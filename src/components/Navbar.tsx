@@ -5,7 +5,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-white/6 bg-slate-950/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 md:px-10 lg:px-12">
         <div className="flex items-center gap-3">
-          <img src="/img/profile.jpg" alt="Lanze" className="h-9 w-9 rounded-full object-cover shadow-sm ring-1 ring-white/6" />
+          <img src="/public/profile.jpg" alt="Lanze" className="h-9 w-9 rounded-full object-cover shadow-sm ring-1 ring-white/6" />
           <span className="sr-only">Lanze Pedrezuela</span>
         </div>
 
