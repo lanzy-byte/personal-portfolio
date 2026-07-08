@@ -39,7 +39,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 overflow-hidden rounded-full lg:rounded-[1.25rem]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="absolute inset-0" style={{ background: 'radial-gradient(circle, rgba(255,107,107,0.08), transparent 60%)' }} />
                 <img
-                  src="/public/profile.jpg"
+                  src="/profile.jpg"
                   alt="Lanze Pedrezuela portrait"
                   className="relative h-full w-full rounded-full object-cover transition-transform duration-300 hover:scale-105 lg:rounded-[1.25rem]"
                 />
