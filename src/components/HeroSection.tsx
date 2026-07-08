@@ -7,7 +7,6 @@ export default function HeroSection() {
   return (
     <section className="hero grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center reveal">
       <div className="order-2 space-y-6 lg:order-1">
-        <p className="text-sm font-medium text-slate-300">Hey 👋</p>
         <h1 className="hero-name">{PROFILE.name}</h1>
         <h2 className="hero-role">{PROFILE.role}</h2>
 

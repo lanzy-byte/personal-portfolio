@@ -52,7 +52,7 @@ export default function ContactSection() {
             <p className="text-slate-300">{CONTACT.location}</p>
           </div>
           <div className="rounded-3xl bg-slate-950/90 p-4 text-sm text-slate-400">
-            <p>Want to see more? I can adapt this portfolio into a full case study experience with deeper project stories and interactive UI previews.</p>
+            <p>Want to see more? Contact me for your next website </p>
           </div>
         </div>
       </div>
